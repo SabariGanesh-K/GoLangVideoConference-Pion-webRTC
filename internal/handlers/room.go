@@ -37,4 +37,18 @@ func RoomWebsocket(c *websocket.Conn){
 
 func createOrGetRoom(uuid string)(string,string,Room){
 
+
+}
+
+func RoomViewerWebsocket(c *websocket.Conn){
+
+}
+
+func roomViewerConn(c *websocket.Conn,p *w.Peers){
+
+}
+
+type websocketMessage struct {
+	Event string `json:"event"`
+	Data string `json:"data"`
 }
